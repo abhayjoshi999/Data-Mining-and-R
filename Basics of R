@@ -1,0 +1,29 @@
+R is a command line scripting language that supports simple one line commands and elaborate, custom written functions. Let’s start with the simple commands
+
+Math
+>45 + 55
+>1 + 1
+>45 + 55
+>1+ 2 + 3 + 4 + 5
+>100 + 100 + 100
+>100 * 3
+>1 + 2 * 3
+>(1 + 2) * 3
+>3*3*3
+>3^3 # this is a comment
+>3>5
+
+Variables
+>x <- 5 # variable set to scalar
+>x <- 45 + 55 # variable set to result 
+> x <- 2 
+> x # display value 
+> x + 1 # does anything “change”? 
+> y <- x + 1 
+> y 
+> x <- x + 1 # same variable on RHS and LHS 
+
+> pi <- 3.14 
+> radius <- 5 
+> circle_area <- pi*radius^2
+> a <- 2; b <- 3; c <- 4 + a # use one line for multiple commands (separate via semicolon)
