@@ -1,0 +1,9 @@
+> weather <- matrix(c(60,65,72, 71, 70, 91,89,94,95,97), nrow = 2, ncol = 5, byrow = TRUE, dimnames = list(c("Chicago", "Dallas"), c("Mon", "Tues", "Wed", "Thurs", "Fri")))
+>weather[1,1]
+>weather[1,]
+>weather[,1]
+>weather[1,1] <- 59
+>weather <- weather + 1
+>dim(weather)
+>newMatrix <- matrix(seq(1:6), 2)
+> newMatrix2 <- matrix(seq(1:6), 2, byrow=T)
