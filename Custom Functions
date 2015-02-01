@@ -1,0 +1,4 @@
+> circle_area <- function(radius) {result <- radius*radius*3.14; if (result < 78) {
++ return(result)}
++ else {return("too large")}}
+> circle_size <- circle_area(10)
