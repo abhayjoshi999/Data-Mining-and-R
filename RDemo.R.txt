@@ -1,0 +1,1 @@
+> hist(random, col=heat.colors(6),breaks=20)
