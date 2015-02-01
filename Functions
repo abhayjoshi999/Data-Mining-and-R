@@ -1,0 +1,12 @@
+>avg_wk30_highs <- mean(wk30_highs )
+>evenNum <- seq(2,100,2)
+>x <- rnorm(100) # generate 100 random variables from ~N(1, 0)
+>x <- rnorm(100,50,20) # generate 100 random variables from ~N(50, 20)
+>sample(c(1:6), 100, replace = TRUE)
+>sample(c(0,1), size = 100, replace = TRUE, prob = c(.3,.7))
+
+>coinFlips <- sample( c(“H”,”T”), 10,
++ replace=TRUE) # use multiple lines for one command
+
+>percent_H <- length(coinFlips[coinFlips=="H"])/length(coinFlips)
+>wk30_highs2[which(is.na(wk30_highs2))] <- mean(wk30_highs2,na.rm=T)
