@@ -1,0 +1,13 @@
+>wk30_highs <- c(80, 85, 84, 95, 78, 90, 88) # variable set to vector
+>Monday <- wk30_highs[1] # access individual vector elements
+>wk30_highs[1] <- 94 # access & set values of vector elements
+(what happened to value of Monday?)
+
+>wk30_highs2 <- wk30_highs
+>wk30_highs2[11] <- 100 # access & set values of vector elements
+>weekDayHighs <- avg_wk30_highs[1:5] # select part of vector
+>Hot <- wk30_highs [wk30_highs>90]
+>lows <- Hot-20 # implicit loops
+
+>which(wk30_highs>70) # access indices of vector elements
+>which(wk30_highs==85)
