@@ -1,0 +1,26 @@
+>inflation<- c(.06,.03,.04, .05,.12,.21,.05,.08,.02,.04)
+>unemployment<- c(.05,.04,.03, .06,.11,.18,.05,.06,.03,.03)
+>yearsEducation<- c(14,13,15, 18,9,10,15,14,13,12)
+>economy<-data.frame(inflation, unemployment, yearsEducation)
+>economy2 <- subset(economy, inflation<.1 & yearsEducation>13, select = c(inflation, yearsEducation))
+>unempCat <- cut(unemployment, br=c(0,.04,.05,.99),
++labels=c("Poor","Average","Excellent"))
+>economy$unempCat <- unempCat
+>row.names(economy) <- c("Dallas", "Houston", "El Paso", "Austin", "Detroit", "Cleveland", "Minneapolis", "Chicago", "Denver", "Santa Fe")
+
+
+Accessing Elements:
+
+>economy[,1] # first column (not including row identities if that was set)
+>economy [1,] # first row
+>economy [1,1] # first scalar/cell
+>economy$inflation
+>economy$inflation[2]
+>names(economy)
+>head(economy)
+>nrow(economy)
+>economy$unemployment[economy$inflation>.1]
+>which(economy$inflation>.1)
+> counter <- seq(1:length(economy$unemployment))
+> economy <- data.frame(economy, counter) # add column to data frame
+>edit(economy) # opens up editor
